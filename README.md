@@ -1,1 +1,274 @@
-# DiscoKarma.github.io
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Arcane Election: Archive File AE-77</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1e1610;--pa:#2a1f17;--tx:#dfcda6;--mu:#b09a74;--ac:#d9a85c;--ne:#f0e2c2;--gm:#e8745e;--ln:#5a4632;--ok:#9cc7a0;--gl:rgba(223,205,166,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="amber"]{--bg:#17110b;--pa:#231a11;--tx:#e0a95a;--mu:#a78454;--ac:#e0a95a;--ne:#f3d9a4;--ln:#54391f;--ok:#b3c98f;--gl:rgba(224,169,90,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:12px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 'Special Elite',Georgia,'Courier New',serif;
+background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(128,100,60,.06) 3px 4px)}
+.top{border-bottom:3px double var(--ln);padding:18px 18px 12px;position:relative;overflow:hidden}
+.cls{font:600 12px 'IBM Plex Mono',monospace;letter-spacing:.14em;padding:5px 10px;margin:-18px -18px 14px;background:var(--ac);color:var(--bg)}
+body.gm .cls{background:var(--gm);color:#fff}
+h1{font:400 clamp(30px,6vw,56px)/1 Limelight,'Times New Roman',serif;margin:0;color:var(--ne)}
+.sub{color:var(--mu);margin:6px 0 0;max-width:62ch}
+.stamp{position:absolute;right:16px;top:44px;border:3px solid var(--gm);color:var(--gm);font:600 14px 'IBM Plex Mono',monospace;padding:4px 10px;transform:rotate(7deg);opacity:.8;display:none}
+body.gm .stamp{display:block}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+button,input{font:600 12px 'IBM Plex Mono',monospace;color:var(--tx);background:var(--pa);border:1px solid var(--ln);padding:8px 12px;border-radius:2px;cursor:pointer}
+button:hover,button.on{border-color:var(--ac);color:var(--ac)}
+body.gm button.gmb.on{border-color:var(--gm);color:var(--gm)}
+button:focus-visible,input:focus-visible,[contenteditable]:focus-visible{outline:2px solid var(--ne);outline-offset:2px}
+input{cursor:text;flex:1;min-width:140px;max-width:280px}
+#pw{display:none;gap:8px;margin-top:10px;align-items:center;flex-wrap:wrap;font:12px 'IBM Plex Mono',monospace;color:var(--gm)}#pw.show{display:flex}
+.wrap{display:grid;grid-template-columns:230px 1fr;gap:22px;padding:18px;max-width:1200px;margin:auto}
+nav{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto;font:12px 'IBM Plex Mono',monospace}
+nav a{display:block;padding:6px 8px;color:var(--mu);text-decoration:none;border-left:3px solid var(--ln)}
+nav a:hover{color:var(--ne);border-color:var(--ne)}nav a.lk{opacity:.6}
+.red{background:var(--tx);color:var(--tx);user-select:none;border-radius:1px}
+section{margin-bottom:34px}
+section>h2{font:400 26px Limelight,serif;margin:0 0 4px;border-bottom:1px solid var(--ln);padding-bottom:4px}
+.code{font:600 11px 'IBM Plex Mono',monospace;color:var(--mu);letter-spacing:.1em}
+.gr{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:12px}
+.c{background:var(--pa);border:1px solid var(--ln);border-left:4px solid var(--ac);padding:12px 14px;margin-top:12px;position:relative}
+.gr .c{margin:0}.c.s{border-left-color:var(--gm)}.c.rv{border-left-color:var(--ok)}
+.c h3{font:400 19px Limelight,serif;margin:0 0 4px}
+.c p{margin:4px 0;white-space:pre-line}
+.gn{border-top:1px dashed var(--gm);padding-top:6px;color:var(--gm);font-size:14px}
+.tag{font:600 10px 'IBM Plex Mono',monospace;letter-spacing:.12em;color:var(--gm)}
+.c.rv .tag{color:var(--ok)}
+.act{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}.act button{padding:4px 8px;font-size:11px}
+.lock{border:2px dashed var(--ln);padding:16px;margin-top:12px;color:var(--mu)}
+.ed [contenteditable]{outline:1px dashed var(--ln);padding:2px;cursor:text}
+.hint{font:12px 'IBM Plex Mono',monospace;color:var(--mu);margin:8px 0}
+@media (max-width:800px){.wrap{grid-template-columns:1fr}nav{position:static;display:flex;overflow-x:auto;max-height:none;gap:4px}nav a{white-space:nowrap;border-left:0;border-bottom:3px solid var(--ln)}.stamp{display:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}#cv *{transition:none!important;animation:none!important}}
+#cv{position:fixed;inset:0;z-index:99;background:#1a120c;color:#d9c7a0;font:14px/1.6 'IBM Plex Mono','Courier New',monospace;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:20px;overflow:hidden;transition:opacity .8s;text-shadow:0 0 3px rgba(217,199,160,.3)}
+#cv::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 4px),radial-gradient(ellipse at center,transparent 60%,rgba(0,0,0,.5));animation:fl 4s infinite}
+@keyframes fl{0%,100%{opacity:1}50%{opacity:.85}52%{opacity:1}}
+#cv.go{opacity:0;pointer-events:none}
+.ttl{font-weight:600;letter-spacing:.14em;text-align:center;font-size:12px}
+.gb{width:min(56vw,250px,32vh);aspect-ratio:1;cursor:pointer;background:none;border:0;padding:0;outline-offset:10px;filter:drop-shadow(0 0 6px rgba(217,199,160,.4))}
+.gb svg{width:100%;height:100%;overflow:visible}
+.gb svg *{fill:none;stroke:#d9c7a0;stroke-width:1.6}
+.mr{transform-box:fill-box;transform-origin:center;animation:sp 3s linear infinite}
+@keyframes sp{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.03)}}
+.st .mr{animation-play-state:paused}
+.gl{transition:opacity .5s}.eye .gl{opacity:0}
+.ey{transform-box:fill-box;transform-origin:center;transform:scaleY(0);transition:transform 1.1s cubic-bezier(.7,0,.3,1)}
+.eye .ey{transform:scaleY(1)}
+.gb svg .al{fill:#1a120c}.gb svg .pu{fill:#d9c7a0;transform-box:fill-box;transform-origin:center;transition:transform .9s ease-in}
+.dz .pu{transform:scale(70)}
+.tt{width:min(92vw,520px);min-height:154px;margin:0;font:inherit;white-space:pre-wrap}
+.cu::after{content:"\2588";animation:bl 1s steps(1) infinite}
+.hn{font-weight:600;letter-spacing:.14em;animation:bl 1.4s steps(1) infinite}.st .hn{opacity:0;animation:none}
+@keyframes bl{50%{opacity:0}}
+
+body{font:15px/1.7 'IBM Plex Mono','Courier New',monospace;text-shadow:none;background-image:none;color-scheme:dark}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;background:repeating-linear-gradient(0deg,rgba(0,0,0,.12) 0 2px,transparent 2px 4px),radial-gradient(ellipse at center,transparent 65%,rgba(0,0,0,.35))}
+h1{font:600 clamp(24px,5vw,44px)/1.1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+h1::before{content:"> "}h1::after{content:"\2588";animation:bl 1s steps(1) infinite}
+.sub::before{content:"// "}
+section>h2{font:600 20px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+section>h2::before{content:"## "}
+.c h3{font:600 15px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em}
+.c h3::before{content:"> "}
+.c{border-radius:0;box-shadow:none;animation:ci .4s steps(5) both}
+@keyframes ci{from{opacity:0;transform:translateY(5px)}}
+button,input{border-radius:0;text-transform:uppercase;letter-spacing:.06em;text-shadow:inherit}
+input{text-transform:none}input::placeholder{color:var(--mu)}
+nav a::before{content:"> "}
+::selection{background:var(--tx);color:var(--bg);text-shadow:none}
+.red{background:var(--tx);color:var(--tx)}
+@media (prefers-reduced-motion:reduce){.c,h1::after{animation:none}}
+</style></head><body>
+<div id="cv"><div class="ttl">ARCANE ORDER // CONTINUITY SERVICES // TERMINAL 77</div><button class="gb" id="fd" aria-label="Begin: open the archive"><svg viewBox="0 0 200 200" aria-hidden="true"><g class="gl"><circle cx="100" cy="100" r="80"/><ellipse class="mr" cx="100" cy="100" rx="80" ry="80"/><ellipse class="mr" style="animation-delay:-.75s" cx="100" cy="100" rx="80" ry="80"/><ellipse class="mr" style="animation-delay:-1.5s" cx="100" cy="100" rx="80" ry="80"/><ellipse class="mr" style="animation-delay:-2.25s" cx="100" cy="100" rx="80" ry="80"/><ellipse cx="100" cy="70" rx="69" ry="12"/><ellipse cx="100" cy="130" rx="69" ry="12"/><path d="M20 100H180"/></g><g class="ey"><path class="al" d="M10 100Q100 22 190 100Q100 178 10 100Z"/><circle cx="100" cy="100" r="34"/><circle cx="100" cy="100" r="25" stroke-dasharray="3 4"/><circle class="pu" cx="100" cy="100" r="13"/></g></svg></button><pre class="tt" id="tt"></pre><div class="hn">[ CLICK THE GLOBE TO BEGIN ]</div></div>
+<header class="top"><div class="cls" id="cls"></div><div class="stamp">DIRECTOR KARMAâ€™S EYES ONLY</div>
+<h1>The Arcane Election</h1><p class="sub">Archive File AE-77. The Election Must Happen. Project: D.A.R.T.O</p><p class="sub" id="dx"></p>
+<div class="bar"><button id="bp">PLAYER VIEW</button><button id="bg" class="gmb">GAME MASTER VIEW</button><button id="be" class="gmb">EDIT: OFF</button><button id="bt">PHOSPHOR</button><input id="q" placeholder="Search the archive" aria-label="Search"><button id="bx" class="gmb">COPY EDITS</button><button id="br" class="gmb">RESET</button></div>
+<div id="pw"><span id="pm">GM CLEARANCE REQUIRED</span><input id="pi" type="password" placeholder="Passcode" aria-label="Passcode" autocomplete="off"><button id="pg">UNLOCK</button><button id="pc">CANCEL</button></div></header>
+<div class="wrap"><nav id="nav"></nav><main id="m"></main></div>
+<script>
+// block: [id, heading, text, gmOnly, gmNote]
+const D=[
+{i:'ov',c:'AE-001',t:'The Premise',b:[
+['o1','The City and the Seat','A small countryâ€™s capital sits on the worldâ€™s principal source of arcane energy. Transit, power, media, industry and security all run on magic, and the president governs the systems that make it work.',0],
+['o2','The Night Theodore Died','Rising reformer Theodore Vesper collapsed during a campaign speech at a party. No wound, no poison, no detectable spell. The official story is natural death or a magical accident. The police interrogated you separately.',0],
+['o3','Campaign Frame','System agnostic. 20 to 30 sessions across 6 to 12 months in one enormous metropolis. A nonlinear sandbox: you represent Little Vesper, and what you do with that is yours.',0],
+['o4','Tone: Darkness With a Pulse','About 70% dark, 30% humor. A ridiculous divine bureaucracy can deliver a devastating verdict; a funny encounter can turn into grief. Humor gives the darkness contrast.',0],
+['o7','Your Place in Little Vesper','You are from this city. In your own history you found peace in Little Vesper: community, family, love. Why you belong there is built with your GM at Session 0.',0],
+['o8','The Opening Scene','The campaign opens at the political party where Theodore dies. You are there as service providers or guests. The scene ends with police interrogations and the arrival of the Sponsor.',0],
+['o5','The Five Fragments','Theodoreâ€™s Director Title shattered into lesser Titles, not copies. Five fragments entered five strangers who noticed nothing: the PCs. Plan about three spare fragments so no player is left out; unclaimed ones stay out of play or go to NPC bearers. One bearer per Title still holds.',1],
+['o9','Starting Power','The PCs begin at level 1 when Theodore is killed. They have no divination or high magic. They cannot scry someone they donâ€™t know exists, and cannot repair memories that are not there.',1],
+['o6','Guardrails','No time travel, no time loops, no DEATHLOOP plot, no copied IP. Inspirations: Deadlock, Dishonored, Arcane (painterly industrial look), DEATHLOOP (visual style only). Neon, art deco, brutalism, disco, funk, jazz, smoke, analog media.',1]]},
+{i:'di',c:'AE-002',t:'District Atlas',g:1,b:[
+['d1','Little Vesper','Close-knit, Chinatown-like neighborhood and political faction. Strong because people know and look after one another. Your home.',0,'Dominated by one family. Residents split between grief, solidarity, fear and opportunism.'],
+['d2','The Civic Core','Seat of government and the institutions that run the election.',0,'OPEN: layout, landmarks, internal politics.'],
+['d3','The Furnace','Industrial heart: heat, machinery, the material systems the city runs on.',0,'OPEN: employers, communities, magical specialties.'],
+['d4','The Heights','Elevated and apart from the rest of the city.',0,'OPEN: social makeup and politics undecided.'],
+['d5','Saint Meridian','Its character is for you to discover.',0,'OPEN: do not infer religion from the name.'],
+['d6','The Underline','Linked to the cityâ€™s transit and what lies beneath it, perhaps.',0,'OPEN: boundaries and communities undefined.'],
+['d7','The Harbor','Waterfront district.',0,'OPEN: economy, communities, significance.'],
+['d8','Neon Mile','Nightlife, retro-futurist glow, venues that never close.',0,'OPEN: venues, institutions, power brokers. Schools of magic per district is only an option, not canon.']]},
+{i:'ma',c:'AE-003',t:'Magic and the Node',b:[
+['m1','Public Magic','Magic is civic life: arcane subways, regulated spellwork, magic engineers, magical media. Vampires, undead, orcs, elves, witches, psychics and occult scholars are ordinary citizens, as in a modern D&D-style world. The supernatural is normal; the deeper laws are not.',0,'Exact costs and limits of everyday magic are unspecified.'],
+['m2','The Arcane Node','The energy source under the city. Few citizens understand how its infrastructure works, and that gap fuels propaganda, expertise and institutional control.',0,'The Node is fuel only. It has no consciousness, picks no candidates and judges no one.'],
+['m3','The President and the Source',' The winnerâ€™s personal connection to the Source begins when the result is validated.',1,'Established: when it starts. Unknown: what it lets the president do.'],
+['m4','Divination and Memory Magic','Detection and divination need a name, a face or a trace. The killerâ€™s spell registers as nothing, and no one can offer a description of him. Memory magic cannot restore what was erased from the narrative itself. Explain failures this way rather than banning the spells.',1]]},
+{i:'el',c:'AE-004',t:'The Election',b:[
+['e1','Office and Powers','The presidency is a unique constitutional post with direct control over magical regulation and infrastructure. It can expand or restrict access, reshape economy and security, save millions or start wars.',0],
+['e2','Eligibility and Voting','Candidates meet normal legal requirements. Voting is an ordinary public vote. An election commission of institutional representatives validates the result; recounts and audits can delay certification.',0],
+['e3','Checks and Succession','Constitutional checks exist but are limited and hard to enforce. A presidentâ€™s death or incapacity is a constitutional crisis.',0,'OPEN: succession rules, interim authority, timeline.'],
+['e4','The Hidden Pressure','The Director Title bent probability toward Theodoreâ€™s victory, without guaranteeing it or controlling votes. How that pressure would work in a normal election is unknown.',1,'Keep the election real: rallies, debates, scandals, recounts, voter concerns.'],
+['e5','Narrative Clock','Election dates are story beats, not a real deadline. The PCs have no timer; events happen as needed. Sketch beats: filing, debates, the vote, validation, a recount window.',1]]},
+{i:'fa',c:'AE-005',t:'The Factions',g:1,b:[
+['f1','Little Vesper','Equality Â· Community Â· Access. Your faction. Its strength is relationships, not wealth.',0],
+['f2','The Old Families','Tradition Â· Inheritance Â· Privilege. Defend inherited status; will accept change that keeps their influence.',0],
+['f3','The Civic Coalition','Public service Â· Equity Â· Reform. Want magical infrastructure to serve ordinary citizens. Overlaps with Little Vesper but is not the same.',0],
+['f4','The Arcane Industrials','Expansion Â· Production Â· Growth. Jobs and services, or concentration and dependency?',0],
+['f5','The Occult Institutions','Secrets Â· Expertise Â· Containment. Guard dangerous knowledge, not always wisely or fairly.',0],
+['f6','The Night','Survival Â· Community Â· Self-rule. Not every member is criminal, undead or nocturnal.',0],
+['f7','The Order','Continuity Â· Stability. A secret shadow government that manages the arcane from the shadows, almost an SCP. Fields no candidate, takes no side, is completely unbiased. It wants one thing: for the election to happen.',1,'Seven factions exist counting the hidden Order; six are public and field candidates. Knows Titles exist and fears primordial intervention. Remembers a country erased from all records.']]},
+{i:'ca',c:'AE-006',t:'Candidate Registry',g:1,b:[
+['k0','Kingmaking','The six public factions field a candidate and can bargain with any other: support for concessions, appointments, protection or promises. Five are major contenders; one is minor. Enter names below.',0,'Assign deliberately. Mix sincere, opportunistic and concealed motives; no pure saint or pure villain. The Order does not participate. Five major and one minor is a proposal; confirm.'],
+['k1','Little Vesper: VACANT','Theodoreâ€™s seat is empty. Others circle.',0,'PCs are not automatic candidates.'],
+['k2','Old Families: [name]','Platform: tap to edit.',0,'Private ambition / line they wonâ€™t cross:'],
+['k3','Civic Coalition: [name]','Platform: tap to edit.',0,'Private ambition / line they wonâ€™t cross:'],
+['k4','Arcane Industrials: [name]','Platform: tap to edit.',0,'Private ambition / line they wonâ€™t cross:'],
+['k5','Occult Institutions: [name]','Platform: tap to edit.',0,'Private ambition / line they wonâ€™t cross:'],
+['k6','The Night: [name]','Platform: tap to edit.',0,'Private ambition / line they wonâ€™t cross:'],
+]},
+{i:'th',c:'AE-007',t:'Subject: Theodore Vesper',b:[
+['t1','The Young Heir','Heir of a minor political family. Kind, reform-minded, increasingly visible. Little Vesper felt like a family partly because of him. He died before the campaign officially began.',0],
+['t2','Cause of Death','Power Word Kill, cast by The Background, who no one registers, so nothing was seen or detected. Only Theodore noticed him, an instant before dying, too late to act. The Director then shattered into lesser Titles.',1,'Keep this a mystery for most of Act I.'],
+['t3','The Killer','The Background killed him to remove a protagonist-like figure. The result was not what he wanted. What he understands about the fragments is undecided.',1]]},
+{i:'ti',c:'AE-008',t:'Titles: Laws of the Narrative',b:[
+['i1','What You Know','You chose your Title at Session 0. You know its Law and sense a Gift waiting if you act rightly. Each Title has four parts: Gift (power), Law (duty), Coronation (fulfilling it), Apostasy (rejecting it). The deeper truth emerges over time. The Law stays the same; the stakes grow.',0],
+['i2','The Hero','Follows a heroic code: helps those in need, saves people, defeats bad actors.',0,'Gift, full Law wording and Coronation not yet specified.'],
+['i3','The Fool','Law: bring joy to those who need it. Feeding a hungry child early; bringing hope to survivors after an attack later.',0,'Gift and Coronation undesigned.'],
+['i4','The Rules (Canon)','Titles are cosmic laws that always existed. One bearer at most. Transfer only at the bearerâ€™s death. Cannot be destroyed or rewritten, but loopholes bend them. Resisting costs, though not always at once. A completed Title can be rejected free of cost. Players pick at Session 0; characters never pick in-world. There are as many Titles as adjectives, nouns and honorifics. They are granted when a fitting person appears, is created or is born, at any time, and many bearers never notice.',1,'OPEN: complete then reject vs the transfer rule.'],
+['i5','The Director','Theodoreâ€™s Title. Orchestrates events; destiny ends in winning the election. On his death it broke into lesser Titles, the fragments the PCs carry.',1,'Answers the one-bearer rule: no Title has two bearers. OPEN: Gift, Law and Coronation; whether Hero and Fool are fragments or independent Titles.'],
+['i6','The Protagonist','Once borne by The Background. The forces above the Titles stripped it as punishment; he did not die. The Title is retired, not destroyed, until those forces choose someone else. This is the vacant Title of Act II.',1],
+['i7','Maybe Titles','Martyr, Lover, King, Witness, Monster: considered, not canon. A self-authored Title is an unreconciled idea; it must not silently rewrite existing law.',1],
+['i8','Important Bearers','More Title bearers live in the city as important NPCs, aligned to no faction. They show how a Title becomes a great tool. To be designed.',1]]},
+{i:'co',c:'AE-009',t:'Gods and Primordials',g:1,b:[
+['g1','Lumen Funk','God of disco and â€™77.',0,'Theology and personality open.'],
+['g2','The Eternal Notary','God of documents, official acts, enduring records.',0],
+['g3','Mother Hearth','Name fixed; domain traditions open.',0],
+['g4','The Endless Line','Name fixed; domain open to interpretation.',0],
+['g5','The General','Followers and domain open.',0],
+['g6','Chance and Chance','Yes, the name is the name.',0],
+['g7','The Faceless Archivist','Domain and methods open.',0,'Gods need believers; domains evolve, not arbitrarily; they can die; they know Titles exist but mostly donâ€™t care; they donâ€™t know The Background.'],
+['g8','Primordials','Concepts given life, above the multiverse. They intervene only when the narrative breaks badly. Their last intervention erased an entire country from every record. Only the Order remembers.',1],
+['g9','The Nameless God','Absent unless bored. Appears as a black void shaped like a frog, playing banjo by a campfire. Keep it absurd.',1]]},
+{i:'sp',c:'AE-010',t:'The Sponsor',b:[
+['s1','Your Handler','After the interrogations an enigmatic Sponsor secured your release and gave you a mission: maintain the Arcane Order.',0],
+['s2','Agenda','Tells the PCs it wants the election held and a politician to win. Truth: the Order only needs the election because the PCs are involved in it. A mission with a due date pushes bearers to grow and advance their Title missions.',1,'Knows about D.A.R.T.O. Does not know who killed Theodore or who The Background is. No prior link to him; do not add one.'],
+['s4','Project D.A.R.T.O','Disposable Anomalous Recipients: Title Observation. One of many Order projects. To the Order, bearers are test subjects, and the Sponsor knows. Success means bearers advancing their Title missions and the election happening. The aim is control of Titles and their powers as a defense against primordials, beings above gods, should one appear again. The PCs are among the observed. Reveal it when the party learns what â€œexpendableâ€ really means.',1,'Pairs with the Sponsorâ€™s withheld secret. Does not link the Sponsor to The Background.'],
+['s3','The Withheld Secret','Knows a way to reject a Title without consequence and hides it, since persuading bearers is easier. Reveal: â€œWe can always find replacements; you are expendable.â€',1]]},
+{i:'bg',c:'AE-011',t:'Subject: The Background',b:[
+['b1','Dossier','Former Protagonist. Wants his family back and the spotlight with it. Will do anything. Suffering explains him; it does not excuse him.',1],
+['b2','The Fall','Too full of himself, he refused a fated loss and meddled with powers that judged him unfit. Stripped of Title, identity and significance. His family lives and doesnâ€™t remember him. This happened about 15 years before the campaign.',1,'Superseded: the earlier account of Lysandra as a dying fiancÃ©e. She is now his wife, alive.'],
+['b3','Obscurity Rules','People see him but fail to register him. Conceals him, not his actions. Moved objects, murders, intrusions, money and records leave traces. Anyone who knows his true name perceives him normally, but learns nothing else.',1],
+['b4','Limits','Powerful arcane user. His body can die, and then he dies. Proxies betray, slip, leave evidence.',1],
+['b5','Three Manifestations','The man himself. The forgotten people of Elmridge. Background figures such as waiters. Plant the waiters early as a pattern. One at the party was likely him, standing near Theodore (optional plant).',1],
+['b6','He Is Not','Not freeing the world from Titles. Not invisible. Not behind every crime. Not a passive victim.',1],
+['b7','The Title Still Binds Him','His curse is still a Title. He can still fulfill it and even become a primordial, and he knows it. His goal is the retired Protagonist Title.',1],
+['b8','His Family','Lysandra, his wife, a teacher from the school districts, is alive. She feels a piece of herself is missing, an unfillable void, and believes her daughter came from a forgotten night. Their daughter Achlys, 18, is entering the arcane school. She is bitter, barely speaks to her mother, thinks her father abandoned her, and is obsessed with death, hoping he died instead. He sometimes watches them from afar. They were not erased, because Lysandra is not from Elmridge.',1]]},
+{i:'nw',c:'AE-012',t:'The Proxy Network',b:[
+['n1','Chain of Command','THE BACKGROUND\nâ–¼\nMAIN PROXIES (few; know his true name, call him The Background)\nâ–¼\nTHE RIGHT HAND (believed to be the boss)\nâ–¼\nSECONDARY PROXIES (know only the title)',1,'Style: Reddington-like, working through intermediaries. Every layer invites mistakes and betrayal. OPEN: who the main proxies and Right Hand are.']]},
+{i:'em',c:'AE-013',t:'Elmridge Colony',b:[
+['x1','The Forgotten District','About 1,000 people, veiled about 15 years ago. The Background was the face of Elmridge: the Protagonist lived there, so when he was erased, so was the place where the show happened. It still physically exists. If he dies, the residents do not die, but stay forgotten forever, since he alone holds the key to restore them.',1,'OPEN: veil mechanics; how Elmridge leads to the true name.'],
+['x2','Investigation Ladder','Unseen hand â†’ pattern across events â†’ organization â†’ apparent boss isnâ€™t the architect â†’ Elmridge and his past â†’ true name â†’ normal perception. One option, not a script.',1],
+['x3','Evidence Categories','Changed objects, access records, victim patterns, money and messages, witnesses who recall the event but not the person, recurring anonymous figures, official accounts that contradict consequences.',1],
+['x4','Clue Seeds (proposed)','Sprinkle clues across the campaign, never as a fixed route. Seeds: a school or tax record naming an address no one can place, Lysandraâ€™s sense of a missing piece, Achlysâ€™s fixation on death, a waiter who is always nearby.',1]]},
+{i:'ac',c:'AE-014',t:'The Three Acts',b:[
+['a1','Act I: Rumors','Investigation, first Title symptoms, early alliances, a living election, the waiters planted.',1],
+['a2','Act II: Cracks','Truth about Titles, the vacant Title, Elmridge, Lysandra, the Sponsorâ€™s reason for hiding the safe exit.',1],
+['a3','Act III: Accounts','Confrontation. Backstories converge with The Background. Each PC chooses: Coronation, Apostasy, or a possible self-authored Title. Fates differ; no correct ending. Anything goes: nuclear war, extinction, a rock for president, eternal happiness, apotheosis.',1,'Work PC connections out with the players at Session 0. Never assign them here.']]},
+{i:'mt',c:'AE-015',t:'Mystery Board',b:[
+['y1','Theodoreâ€™s Death','Known: no wound, poison or spell; the Director split into fragments. Answer: Power Word Kill from an unnoticed Background, revealed late in Act I.',1],
+['y2','The Director Title','Known: Theodoreâ€™s, bent probability. Unknown: Gift, Law, Coronation, fragments.',1],
+['y3','The Background','Known: ex-Protagonist. Unknown: true name, method to learn it.',1],
+['y4','Elmridge','Known: ~1,000 people, veiled. Unknown: veil mechanics, link to him.',1],
+['y5','The Sponsor','Known: wants election and narrative preserved. Unknown: greater forces behind the Order.',1],
+['y6','The Erased Country','Known: erased by primordial intervention. Unknown: which, and how.',1,'Tap SHARE WITH PLAYERS on any file to reveal it in Player View.']]},
+{i:'cn',c:'AE-016',t:'Continuity Register',b:[
+['z1','Five Rules','1. Backgroundâ€™s motive is personal restoration. 2. PCs own their decisions. 3. The election stays an election; six public factions field candidates and the secret Order fields none. 4. Titles are cosmic law; reconcile, donâ€™t invent. 5. His curse hides him, not his consequences.',1],
+['z2','Timeline','About 15 years ago: Protagonist falls and Elmridge is veiled (Achlys is 3) â†’ Theodore rises â†’ Theodore dies at the party â†’ political vacuum, Sponsorâ€™s mission â†’ Little Vesper exposed â†’ Background continues.',1],
+['z3','Superseded: Donâ€™t Restore','Lysandra as a dying fiancÃ©e. The Order as a candidate-fielding faction. Background freeing the world. A conscious Node. Magical candidate selection. Sponsor tied to Background. Mandatory PC paths.',1],
+['z4','Open Questions','Five major candidates and sponsors. Succession. Director mechanics. â€œVacant Title.â€ Main proxies, Right Hand, true name. Lysandraâ€™s link. Order hierarchy. District detail.',1,'Answer these in edit mode when decided.'],
+['z5','Before Session 0','Write Gifts, Laws and Coronations for Hero, Fool and a full pickable Title list. Decide each PCâ€™s hook into Little Vesper. Build the five major candidates. Design important Title-bearer NPCs. Give each district a hook. Draft sprinkled clues and three routes to Elmridge. Choose the main proxies and the Right Hand. Check lines and veils with players, since the Backgroundâ€™s story involves a lost family.',1]]},
+{i:'nt',c:'AE-017',t:'GM Notes and Session Log',b:[
+['q1','Session Log','Tap to record what happened.',1],
+['q2','NPC Scratchpad','Names, voices, secrets.',1]]}
+];
+const DEF={m:'p',e:0,ed:{},rev:{},cu:{}};let S=DEF;
+try{S=Object.assign({},DEF,JSON.parse(localStorage.getItem('ae77')||'{}'))}catch(e){}
+const H='99cd3f8b199f4b6e2821e6782440616f1dde67fa2bfc74860497a41e7b70bf9b';
+let U=false;
+if(!U){S.m='p';S.e=0}
+const sv=()=>{try{localStorage.setItem('ae77',JSON.stringify(S))}catch(e){}};
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const v=(k,d)=>S.ed[k]!==undefined?S.ed[k]:d;
+const bl=s=>s.b.concat(S.cu[s.i]||[]);
+function render(){
+ const G=S.m==='g',E=G&&S.e,q=$('q').value.toLowerCase();
+ document.body.className=G?'gm':'';
+ $('cls').textContent=G?'CLEARANCE LEVEL 5: GAME MASTER. FULL ARCHIVE. DO NOT DISTRIBUTE.':'CLEARANCE LEVEL 2: REPRESENTATIVE OF LITTLE VESPER. SOME FILES RESTRICTED.';
+ $('dx').innerHTML='D.A.R.T.O: '+((G||S.rev.dx)?'<b>Disposable Anomalous Recipients: Title Observation</b>':'<span class="red">XXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXX XXXXXXXXXXX</span>')+(G?` <button data-x="1">${S.rev.dx?'HIDE FROM PLAYERS':'SHARE WITH PLAYERS'}</button>`:'');
+ $('bp').className=G?'':'on';$('bg').className='gmb'+(G?' on':'');$('be').className='gmb'+(E?' on':'');
+ $('be').textContent='EDIT: '+(E?'ON':'OFF');
+ ['be','bx','br'].forEach(i=>$(i).style.display=G?'':'none');
+ let nav='',h='';
+ D.forEach(s=>{
+  const all=bl(s),vis=all.filter(b=>G||!b[3]||S.rev[b[0]]);
+  if(!vis.length){nav+=`<a class="lk" href="#s-${s.i}">${s.c} <span class="red">XXXXXXXX</span></a>`;
+   h+=`<section id="s-${s.i}"><div class="code">${s.c}</div><h2><span class="red">${'X'.repeat(14)}</span></h2><div class="lock">CLASSIFIED. Your clearance does not cover this file. Ask your GM what you have uncovered.</div></section>`;return}
+  nav+=`<a href="#s-${s.i}">${s.c} ${esc(s.t)}</a>`;
+  let cards=vis.filter(b=>!q||(b[1]+b[2]+(G?b[4]||'':'')).toLowerCase().includes(q)).map(b=>{
+   const sec=b[3],rv=sec&&S.rev[b[0]],ce=E?' contenteditable="true"':'';
+   return `<article class="c${sec?(rv?' rv':' s'):''}" id="${b[0]}">${sec&&G?`<div class="tag">${rv?'REVEALED TO PLAYERS':'GM EYES ONLY'}</div>`:''}
+<h3${ce} data-k="${b[0]}h">${esc(v(b[0]+'h',b[1]))}</h3><p${ce} data-k="${b[0]}t">${esc(v(b[0]+'t',b[2]))}</p>
+${G&&b[4]!==undefined&&b[4]!==''?`<p class="gn"${ce} data-k="${b[0]}n">${esc(v(b[0]+'n',b[4]))}</p>`:''}
+${G&&(sec||b[0][0]==='c')?`<div class="act">${sec?`<button data-r="${b[0]}">${rv?'HIDE FROM PLAYERS':'SHARE WITH PLAYERS'}</button>`:''}${E&&b[0][0]==='c'?`<button data-d="${s.i}|${b[0]}">DELETE</button>`:''}</div>`:''}</article>`}).join('');
+  h+=`<section id="s-${s.i}" class="${E?'ed':''}"><div class="code">FILE ${s.c}</div><h2>${esc(s.t)}</h2><div class="${s.g?'gr':''}">${cards}</div>${E?`<p><button data-a="${s.i}">+ ADD FILE</button></p>`:''}</section>`;
+ });
+ $('nav').innerHTML=nav;$('m').innerHTML=h||'';
+ if(!$('m').textContent.trim())$('m').innerHTML='<p class="hint">Nothing matches.</p>';
+}
+$('bp').onclick=()=>{U=false;S.m='p';S.e=0;pw.classList.remove('show');sv();render()};
+async function hx(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+const pw=$('pw');
+$('bg').onclick=()=>{if(U){S.m='g';sv();render()}else{pw.classList.add('show');$('pi').focus()}};
+$('pc').onclick=()=>{pw.classList.remove('show');$('pi').value='';$('pm').textContent='GM CLEARANCE REQUIRED'};
+async function tryPw(){let ok=false;try{ok=(await hx($('pi').value))===H}catch(e){}
+ if(ok){U=true;$('pc').onclick();S.m='g';sv();render()}
+ else{$('pm').textContent='ACCESS DENIED. TRY AGAIN.';$('pi').value=''}}
+$('pg').onclick=tryPw;$('pi').onkeydown=e=>{if(e.key==='Enter')tryPw()};
+$('be').onclick=()=>{S.e=S.e?0:1;sv();render()};
+$('q').oninput=render;
+$('dx').onclick=e=>{if(e.target.dataset.x){S.rev.dx=!S.rev.dx;sv();render()}};
+$('bt').onclick=()=>{const r=document.documentElement;r.dataset.theme=r.dataset.theme==='amber'?'':'amber'};
+$('bx').onclick=async()=>{try{await navigator.clipboard.writeText(JSON.stringify(S));$('bx').textContent='COPIED'}catch(e){$('bx').textContent='COPY BLOCKED'}setTimeout(()=>$('bx').textContent='COPY EDITS',1800)};
+let arm=0;$('br').onclick=()=>{if(!arm){arm=1;$('br').textContent='CLICK AGAIN TO WIPE EDITS';setTimeout(()=>{arm=0;$('br').textContent='RESET'},3000);return}
+ S=Object.assign({},DEF,{ed:{},rev:{},cu:{}});sv();arm=0;$('br').textContent='RESET';render()};
+$('m').addEventListener('input',e=>{const k=e.target.dataset.k;if(k){S.ed[k]=e.target.innerText;sv()}});
+$('m').addEventListener('click',e=>{const t=e.target;
+ if(t.dataset.r){S.rev[t.dataset.r]=!S.rev[t.dataset.r];sv();render()}
+ if(t.dataset.a){(S.cu[t.dataset.a]=S.cu[t.dataset.a]||[]).push(['c'+Date.now(),'New file','Tap to write.',1,'']);sv();render()}
+ if(t.dataset.d){const[s,id]=t.dataset.d.split('|');S.cu[s]=S.cu[s].filter(b=>b[0]!==id);sv();render()}});
+const cv=$('cv'),inr=[...document.querySelectorAll('.top,.wrap')];inr.forEach(e=>e.inert=true);
+const fin=()=>{cv.remove();inr.forEach(e=>e.inert=false)};let op=0;
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,tt=$('tt'),L=['> LINK ESTABLISHED','> SUBJECT: THE ARCANE ELECTION','> THE ELECTION MUST HAPPEN','> PROJECT: D.A.R.T.O','> D.A.R.T.O: \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588','> OBSERVATION: ACTIVE','> AWAITING OPERATOR'];
+let li=0,ci=0;
+function ty(){if(li>=L.length){tt.classList.add('cu');return}ci++;tt.textContent=L.slice(0,li).concat(L[li].slice(0,ci)).join('\n');
+ if(ci>=L[li].length){li++;ci=0;setTimeout(ty,260)}else setTimeout(ty,22)}
+if(rm){tt.textContent=L.join('\n');tt.classList.add('cu')}else ty();
+function openF(){if(op)return;op=1;if(rm)return fin();cv.classList.add('st');setTimeout(()=>cv.classList.add('eye'),500);setTimeout(()=>cv.classList.add('dz'),1800);setTimeout(()=>cv.classList.add('go'),2300);setTimeout(fin,3200)}
+$('fd').onclick=openF;$('fd').focus();
+render();
+</script></body></html>
